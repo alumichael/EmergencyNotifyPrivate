@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/profile"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Profile"
+        android:fontFamily="@font/nunito_light"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="101"
+        android:title="About"
+        android:fontFamily="@font/nunito_light"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="102"
+        android:title="Share"
+        android:fontFamily="@font/nunito_light"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_update"
+        android:orderInCategory="103"
+        android:title="Update"
+        android:fontFamily="@font/nunito_light"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="103"
+        android:title="Log out"
+        android:fontFamily="@font/nunito_light"
+        app:showAsAction="never" />
+
+
+</menu>

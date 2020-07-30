@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_layout"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:padding="@dimen/size_ten"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_ten"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="2dp"
+                android:src="@drawable/emergency_notifier_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Emergency\nNotifier"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorWhiteTint"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_sixty"
+            android:text="Sign In"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/colorWhiteTint"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/usertype_spinner_signin"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/size_ten"
+            android:background="@drawable/spinner_bg"
+            android:textColor="@color/colorWhiteTint"
+            android:fontFamily="@font/nunito_semibold"
+            android:layout_gravity="center_vertical" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <EditText
+                    android:id="@+id/email_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorWhiteTint"
+                    android:textColorHint="@color/colorGrey" />
+
+                <EditText
+                    android:id="@+id/password_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_ten"
+            android:text="Login"
+            android:background="@drawable/rounded_right_bg_color_btn"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:indicatorColor="@color/colorWhiteTint"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_ten"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have account yet ?"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/size_fifteen"
+                android:fontFamily="@font/nunito_semibolditalic" />
+
+            <TextView
+                android:id="@+id/txt_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_ten"
+                android:layout_marginLeft="@dimen/size_ten"
+                android:text="Register"
+                android:textColor="@color/colorWhiteTint"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_semibold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_forget_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/size_ten"
+            android:layout_marginTop="@dimen/size_ten"
+            android:layout_marginEnd="@dimen/size_ten"
+            android:text="--Forgot Password--"
+            android:textColor="@color/colorWhiteTint"
+            android:textSize="15sp"
+            android:fontFamily="@font/nunito_semibold" />
+    </LinearLayout>
+</FrameLayout>

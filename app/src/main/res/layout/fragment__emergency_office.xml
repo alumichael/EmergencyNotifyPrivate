@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:circular="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_layout"
+    android:background="@color/colorPrimary"
+    tools:context=".fragements.Fragment_EmergncyOffice">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification \nDelay"
+            android:layout_margin="4dp"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@color/colorWhiteTint"
+            />
+
+
+
+    <LinearLayout
+        android:id="@+id/emergency_layout"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="5dp"
+        android:visibility="visible"
+        android:layout_weight="1">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/progress_load_office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            app:indicatorColor="@color/colorWhitePure"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                app:layoutManager="LinearLayoutManager"
+                tools:listitem="@layout/status_list"/>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/not_found_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_empty" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:fontFamily="@font/nunito_regular"
+                android:text="No Notification found"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhiteTint"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+    </FrameLayout>

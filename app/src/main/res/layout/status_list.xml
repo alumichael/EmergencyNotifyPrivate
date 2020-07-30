@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/status_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="3dp"
+
+        android:backgroundTint="@color/colorWhitePure"
+        app:cardElevation="@dimen/size_three"
+        android:layout_marginTop="@dimen/size_two"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/first_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sandy John"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/personal_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Number: 08012344"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:id="@+id/family_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Family Number: 08012344"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/location_cordinate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location: Lat/Long: 3.3737, 5.32272"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/date_and_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Period: 02/02/1098  |  12:22"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+
+
+
+               <!-- <TextView
+                    android:id="@+id/status_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unattended"
+                    android:textColor="@color/colorWhiteTint"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textSize="15sp"
+                    android:background="@color/colorRed"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="8dp"
+                    />-->
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

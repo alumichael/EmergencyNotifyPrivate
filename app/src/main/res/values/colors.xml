@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1f2529</color>
+    <color name="colorPrimaryDark">#1F2529</color>
+    <color name="colorAccent">#4892b7</color>
+    <color name="colorAccentEnds">#144C68</color>
+
+    <color name="colorGreen">#286603</color>
+    <color name="colorRed">#C4080E</color>
+    <color name="colorDeepRed">#6F0307</color>
+    <color name="colorBlack">#1f2529</color>
+
+    <color name="colorWhiteTint">#C4C4C4</color>
+    <color name="colorGrey">#A3A2A2</color>
+    <color name="colorWhitePure">#FDFCFC</color>
+
+    <color name="colorYellow">#FFC107</color>
+    <color name="colorBlue">#0D0D80</color>
+
+
+
+
+    //timer
+
+    <color name="circular_progress_default_progress">#4892b7</color>
+    <color name="circular_progress_default_background">#E2E1E1</color>
+    <color name="circular_progress_default_title">#E2E1E1</color>
+    <color name="circular_progress_default_subtitle">#D1D1D1</color>
+</resources>

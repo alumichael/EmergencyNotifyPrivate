@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/signup_layout"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:padding="@dimen/size_twelve"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_ten"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="2dp"
+                android:src="@drawable/emergency_notifier_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Emergency\nNotifier"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorWhiteTint"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_ten"
+            android:text="Sign Up"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/colorWhiteTint"
+            android:textSize="23sp" />
+
+        <Spinner
+            android:id="@+id/usertype_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/spinner_bg"
+            android:textColor="@color/colorWhiteTint"
+            android:fontFamily="@font/nunito_semibold"
+            android:layout_gravity="center_vertical" />
+
+        <ScrollView
+            android:id="@+id/normal_user_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:clickable="true"
+            >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <EditText
+                    android:id="@+id/firstname_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:hint="First Name"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:inputType="textPersonName"
+                    />
+
+                <EditText
+                    android:id="@+id/lastname_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:hint="Last Name"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:inputType="textPersonName"
+                    />
+
+                <EditText
+                    android:id="@+id/email_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:hint="Email Address"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:inputType="textEmailAddress"
+                    />
+
+                <EditText
+                    android:id="@+id/phone_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:hint="Phone Number"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:inputType="phone"
+                    />
+
+                <EditText
+                    android:id="@+id/address_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:hint="Resident Address"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:inputType="text"
+                    />
+
+                <EditText
+                    android:id="@+id/next_ofkin_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:hint="Next of Kin Phone Number"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:inputType="phone"
+                    />
+
+                <EditText
+                    android:id="@+id/password_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    />
+
+                <EditText
+                    android:id="@+id/confirm_pass_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:hint="Confirm password"
+                    android:inputType="textPassword"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/emergency_office_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:clickable="false"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/organization_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:hint="Organization Name"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:inputType="textPersonName"
+                    />
+
+                <EditText
+                    android:id="@+id/office_email_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:hint="Email Address"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:inputType="textEmailAddress"
+                    />
+
+                <EditText
+                    android:id="@+id/office_phone_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:hint="Phone Number"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:inputType="phone"
+                    />
+
+                <Spinner
+                    android:id="@+id/state_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:textSize="12sp"
+                    android:padding="4dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/spinner_bg"  android:textColor="@color/colorWhiteTint"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:layout_gravity="center_vertical" />
+
+                <EditText
+                    android:id="@+id/office_password_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    />
+
+                <EditText
+                    android:id="@+id/office_confirm_pass_editxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/size_ten"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhiteTint"
+                    android:hint="Confirm password"
+                    android:inputType="textPassword"
+                    />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_ten"
+            android:background="@drawable/rounded_right_bg_color_btn"
+            android:text="Sign Up"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:indicatorColor="@color/colorAccent"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_ten"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/size_fifteen"
+                android:fontFamily="@font/nunito_semibolditalic" />
+
+            <TextView
+                android:id="@+id/txt_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_ten"
+                android:layout_marginLeft="@dimen/size_ten"
+                android:text="Sign In"
+                android:textColor="@color/colorWhiteTint"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_semibold" />
+        </LinearLayout>
+        
+    </LinearLayout>
+</FrameLayout>

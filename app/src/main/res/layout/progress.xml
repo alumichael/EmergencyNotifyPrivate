@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ProgressBar
+        android:id="@+id/progressbar_timerview"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/circleshape2_timerview" />
+
+    <TextView
+        android:id="@+id/textView_timerview_time"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.6"
+        android:background="@drawable/circleshape_timerview"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressbar1_timerview"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal|center"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/circleshape1_timerview"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_timerview_start"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="Start !"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/button_timerview_stop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="Stop !"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:textStyle="italic"
+        />
+
+    <EditText
+        android:id="@+id/textview_timerview_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="35sp"
+        android:hint=""/>
+</RelativeLayout>

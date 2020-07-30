@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "206983789873",
+    "firebase_url": "https://emergencynotifier-20ef7.firebaseio.com",
+    "project_id": "emergencynotifier-20ef7",
+    "storage_bucket": "emergencynotifier-20ef7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206983789873:android:c60b0267cdda3bfdb00410",
+        "android_client_info": {
+          "package_name": "com.mikelearning.projecttest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206983789873-a8l112q0uh34914b78k0hgqkd2r01eh1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mikelearning.projecttest",
+            "certificate_hash": "78e364d09c9959c8b4d91594930e4d14cf62c874"
+          }
+        },
+        {
+          "client_id": "206983789873-rbie0soc3taugr23hciunh1iafsu1448.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtPg-QmLVq19q_j6vDC3tzkNL7tFSVf3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206983789873-rbie0soc3taugr23hciunh1iafsu1448.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
